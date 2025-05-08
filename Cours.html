@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Courses - eLearning CUTM</title>
+    <meta name="description" content="Browse our selection of courses" />
+    <meta name="author" content="Lovable" />
+    <link rel="stylesheet" href="Design2.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <header class="navbar">
+      <div class="container">
+        <div class="nav-brand">
+          <a href="index.html" class="brand-link">
+            <span class="text-primary">
+              <span class="text-black">e</span>Learning CUTM
+            </span>
+          </a>
+        </div>
+        
+        <nav class="main-nav">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="courses.html" class="nav-link active">Courses</a>
+          <a href="#" class="nav-link">Blog</a>
+          <a href="#" class="nav-link">
+            Page <span class="dropdown-icon">▼</span>
+          </a>
+          <a href="#" class="nav-link">LearnPress Add-On</a>
+          <a href="#" class="nav-link">Premium Theme</a>
+        </nav>
+        
+        <div class="nav-actions">
+          <a href="#" class="login-link">Login / Register</a>
+          <button class="icon-button">
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
+        
+        <!-- Mobile menu button -->
+        <button class="mobile-menu-btn" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+      <div class="container">
+        <div class="breadcrumb-links">
+          <a href="index.html">Homepage</a>
+          <span>/</span>
+          <a href="courses.html">Course</a>
+          <span>/</span>
+          <span class="breadcrumb-current">This Course Guide To The Detailed View LMS Plugin</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main content -->
+    <main class="courses-page">
+      <div class="container">
+        <h1 class="page-title">All Courses</h1>
+        
+        <div class="courses-layout">
+          <!-- Sidebar with filters -->
+          <div class="courses-sidebar">
+            <div class="search-box">
+              <input type="text" placeholder="Search..." class="search-input" />
+              <i class="fas fa-search search-icon"></i>
+            </div>
+            
+            <div class="filter-section">
+              <h3 class="filter-title">Course Category</h3>
+              <div class="filter-options">
+                <div class="filter-option">
+                  <label class="checkbox-container">
+                    <input type="checkbox" name="development" />
+                    <span class="checkmark"></span>
+                    <span class="label-text">Development</span>
+                  </label>
+                  <span class="count">10</span>
+                </div>
+                <div class="filter-option">
+                  <label class="checkbox-container">
+                    <input type="checkbox" name="office" />
+                    <span class="checkmark"></span>
+                    <span class="label-text">Office</span>
+                  </label>
+                  <span class="count">10</span>
+                </div>
+                <div class="filter-option">
+                  <label class="checkbox-container">
+                    <input type="checkbox" name="design" checked />
+                    <span class="checkmark"></span>
+                    <span class="label-text">Design</span>
+                  </label>
+                  <span class="count">10</span>
+                </div>
+                <div class="filter-option">
+                  <label class="checkbox-container">
+                    <input type="checkbox" name="language" />
+                    <span class="checkmark"></span>
+                    <span class="label-text">Language</span>
+                  </label>
+                  <span class="count">10</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="filter-section">
+              <h3 class="filter-title">Instructors</h3>
+              <div class="filter-options">
+                <div class="filter-option">
+                  <label class="checkbox-container">
+                    <input type="checkbox" name="john-smith" />
+                    <span class="checkmark"></span>
+                    <span class="label-text">John Smith</span>
+                  </label>
+                  <span class="count">10</span>
+                </div>
+                <div class="filter-option">
+                  <label class="checkbox-container">
+                    <input type="checkbox" name="jane-doe" />
+                    <span class="checkmark"></span>
+                    <span class="label-text">Jane Doe</span>
+                  </label>
+                  <span class="count">10</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="filter-section">
+              <h3 class="filter-title">Price</h3>
+              <div class="filter-options">
+                <div class="filter-option">
+                  <label class="checkbox-container">
+                    <input type="checkbox" name="all" />
+                    <span class="checkmark"></span>
+                    <span class="label-text">All</span>
+                  </label>
+                  <span class="count">10</span>
+                </div>
+                <div class="filter-option">
+                  <label class="checkbox-container">
+                    <input type="checkbox" name="free" />
+                    <span class="checkmark"></span>
+                    <span class="label-text">Free</span>
+                  </label>
+                  <span class="count">10</span>
+                </div>
+                <div class="filter-option">
+                  <label class="checkbox-container">
+                    <input type="checkbox" name="paid" />
+                    <span class="checkmark"></span>
+                    <span class="label-text">Paid</span>
+                  </label>
+                  <span class="count">10</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="filter-section">
+              <h3 class="filter-title">Review</h3>
+              <div class="filter-options">
+                <div class="filter-option">
+                  <label class="checkbox-container">
+                    <input type="checkbox" name="stars-5" />
+                    <span class="checkmark"></span>
+                    <span class="label-text star-rating">
+                      <span class="star filled">★</span>
+                      <span class="star filled">★</span>
+                      <span class="star filled">★</span>
+                      <span class="star filled">★</span>
+                      <span class="star filled">★</span>
+                    </span>
+                  </label>
+                  <span class="count">(1,025)</span>
+                </div>
+                <div class="filter-option">
+                  <label class="checkbox-container">
+                    <input type="checkbox" name="stars-4" />
+                    <span class="checkmark"></span>
+                    <span class="label-text star-rating">
+                      <span class="star filled">★</span>
+                      <span class="star filled">★</span>
+                      <span class="star filled">★</span>
+                      <span class="star filled">★</span>
+                      <span class="star empty">★</span>
+                    </span>
+                  </label>
+                  <span class="count">(1,025)</span>
+                </div>
+                <div class="filter-option">
+                  <label class="checkbox-container">
+                    <input type="checkbox" name="stars-3" />
+                    <span class="checkmark"></span>
+                    <span class="label-text star-rating">
+                      <span class="star filled">★</span>
+                      <span class="star filled">★</span>
+                      <span class="star filled">★</span>
+                      <span class="star empty">★</span>
+                      <span class="star empty">★</span>
+                    </span>
+                  </label>
+                  <span class="count">(1,025)</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="filter-section">
+              <h3 class="filter-title">Level</h3>
+              <div class="filter-options">
+                <div class="filter-option">
+                  <label class="checkbox-container">
+                    <input type="checkbox" name="all-levels" />
+                    <span class="checkmark"></span>
+                    <span class="label-text">All Levels</span>
+                  </label>
+                  <span class="count">10</span>
+                </div>
+                <div class="filter-option">
+                  <label class="checkbox-container">
+                    <input type="checkbox" name="beginner" />
+                    <span class="checkmark"></span>
+                    <span class="label-text">Beginner</span>
+                  </label>
+                  <span class="count">10</span>
+                </div>
+                <div class="filter-option">
+                  <label class="checkbox-container">
+                    <input type="checkbox" name="intermediate" />
+                    <span class="checkmark"></span>
+                    <span class="label-text">Intermediate</span>
+                  </label>
+                  <span class="count">10</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Course listings -->
+          <div class="courses-content">
+            <div class="course-grid" id="courses-container">
+              <!-- Courses will be populated by JavaScript -->
+            </div>
+            
+            <div class="pagination">
+              <button class="pagination-btn active">1</button>
+              <button class="pagination-btn">2</button>
+              <button class="pagination-btn">3</button>
+              <button class="pagination-btn">›</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-column">
+            <a href="index.html" class="footer-brand">
+              <span class="text-primary">
+                <span class="text-black">e</span>Learning CUTM
+              </span>
+            </a>
+            <p class="footer-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+          
+          <div class="footer-column">
+            <h3 class="footer-heading">GET HELP</h3>
+            <ul class="footer-links">
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Latest Articles</a></li>
+              <li><a href="#">FAQ</a></li>
+            </ul>
+          </div>
+          
+          <div class="footer-column">
+            <h3 class="footer-heading">PROGRAMS</h3>
+            <ul class="footer-links">
+              <li><a href="#">Art & Design</a></li>
+              <li><a href="#">Business</a></li>
+              <li><a href="#">IT & Software</a></li>
+              <li><a href="#">Languages</a></li>
+            </ul>
+          </div>
+          
+          <div class="footer-column">
+            <h3 class="footer-heading">CONTACT US</h3>
+            <p class="footer-text">
+              Address: 3343 New Denver St, Jorden South, USA
+            </p>
+            <p class="footer-text">
+              Tel: +1 (123) 4560-98-890
+            </p>
+            <p class="footer-text">
+              Mail: support@levig.com
+            </p>
+            <div class="social-links">
+              <a href="#" class="social-link">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="social-link">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="social-link">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
+    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
+    <script src="script.js"></script>
+
+    <style>
+      /* Stiluri de bază pentru afișare */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+      }
+      .category-card, .course-card {
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        padding: 15px;
+        margin: 10px;
+        text-decoration: none;
+        color: black;
+        display: inline-block;
+        width: 200px;
+        text-align: center;
+      }
+      .category-icon {
+        font-size: 30px;
+      }
+      .course-card {
+        width: 300px;
+        vertical-align: top;
+      }
+      .course-image {
+        width: 100%;
+        border-radius: 8px;
+      }
+      .course-category {
+        background-color: #eee;
+        padding: 5px;
+        display: block;
+        margin-top: 5px;
+        font-weight: bold;
+      }
+      .course-meta span {
+        display: inline-block;
+        margin: 5px 10px 5px 0;
+      }
+      .course-footer {
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .price-free {
+        display: none;
+      }
+      .view-button {
+        background-color: #007BFF;
+        border: none;
+        color: white;
+        padding: 8px 12px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    </style>
+  </body>
+</html>

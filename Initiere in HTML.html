@@ -1,43 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Initiere in HTML</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>eLearning CUTM</title>
+  <link rel="stylesheet" href="Design.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-    <h1 style="text-align: center;">Practica de initiere RC-241</h1>
-    <hr style="margin: 0; border: none; height: 2px; background-color: black;">
-    <hr style="position: fixed; bottom: 0; left: 0; width: 100%; height: 2px; border: none; background-color: black; margin: 0;">
-    <div style="display: flex; justify-content: space-between;">
-        <p>Alexa Nicolae</p>
-        <p>Alexa Nicolae</p>
-        <p style="position: absolute; bottom: 40px; left: 10px;">Alexa Nicolae</p>
-        <p style="position: absolute; bottom: 40px; right: 10px;">Alexda Nicolae</p>
-    </div>
-    <div style="display: flex; justify-content: center; gap: 20px; margin-top: 20px;">
-        <input type="text" placeholder="Text">
-        <select>
-            <option value="1">Mediu</option>
-            <option value="2">Important</option>
-        </select>
-        <input type="date">
-    </div>
-    <div style="display: flex; justify-content: center; gap: 20px; margin-top: 20px;">
-        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/47/FC_Barcelona_%28crest%29.svg/800px-FC_Barcelona_%28crest%29.svg.png" alt="" style="width: 25.7%; height: 25%;">
-        <img src="https://upload.wikimedia.org/wikipedia/en/e/eb/Manchester_City_FC_badge.svg" alt="" style="width: 25%; height: 25%;">
-        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a7/Paris_Saint-Germain_F.C..svg/1200px-Paris_Saint-Germain_F.C..svg.png" alt="" style="width: 27%; height: 25%;">
-    </div>
-    <hr style="position: fixed; bottom: 80px; left: 0; width: 100%; height: 2px; border: none; background-color: black; margin: 0;">
-    <label>
-        <input type="checkbox" onclick="this.nextElementSibling.style.color = this.checked ? 'blue' : 'black';">
-        <span style="margin-left: 5px;">Raspuns Corect</span>
-    </label>
-    <div class="section" id="intrebari">
-        <div class="question">
-            <input type="radio" onclick="this.nextElementSibling.style.color = this.checked ? 'blue' : 'black';">
-            <span style="margin-left: 5px;">Varianta corecta</span>
+
+<!-- Navbar -->
+<header class="navbar">
+    <div class="container">
+        <div class="logo">
+            <img src="book.png" alt="eLearning Logo" style="height: 40px; vertical-align: middle;">
+             eLearning CUTM
         </div>
+        <nav>
+            <ul class="nav-links">
+                <li class="active">Home</li>
+                <li><a href="Cours.html"><b>Courses</b></a></li>
+                <li><b>Blog</b></li>
+                <li><b>Page</b><i class="fas fa-chevron-down"></i></li>
+                <li><b>LearnPress Add-On</b></li>
+                <li><b>Premium Theme</b></li>
+            </ul>
+        </nav>
+        <div class="auth"><b>Login / Register </b><i class="fas fa-search"></i></div>
     </div>
+</header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container hero-content">
+      <div class="hero-text">
+        <h1>Build Skills With<br>Online Course</h1>
+        <p>We denounce with righteous indignation and dislike men who are<br>
+            so beguiled and demoralized that cannot trouble.</p>
+        <button class="comment-btn">Posts Comment!</button>
+      </div>
+      <div class="hero-image">
+        <img src="Fata.png" vspace="200" hspace="200" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Categories Section -->
+<section class="categories">
+    <div class="container">
+      <h2 style="text-align:left">Top Categories</h2>
+      <button class="all-categories-btn" style="float: right;">All categories</button>
+      <p class="subtitle" style="text-align:left">Explore our Popular Categories</p>
+      <div class="grid">
+        <div class="cat-box">
+          <img src="art.png" alt="Art & Design Icon" class="icon">
+          <br>Art & Design<br><span>38 Courses</span>
+        </div>
+        <div class="cat-box">
+          <img src="codare.png" alt="Development Icon" class="icon">
+          <br>Development<br><span>38 Courses</span>
+        </div>
+        <div class="cat-box">
+          <img src="message.png" alt="Communication Icon" class="icon">
+          <br>Communication<br><span>38 Courses</span>
+        </div>
+        <div class="cat-box">
+          <img src="film-making.png" alt="Videography Icon" class="icon">
+          <br>Videography<br><span>38 Courses</span>
+        </div>
+        <div class="cat-box">
+          <img src="videography.png" alt="Photography Icon" class="icon">
+          <br>Photography<br><span>38 Courses</span>
+        </div>
+        <div class="cat-box">
+          <img src="marketing.png" alt="Marketing Icon" class="icon">
+          <br>Marketing<br><span>38 Courses</span>
+        </div>
+        <div class="cat-box">
+          <img src="write.png" alt="Content Writing Icon" class="icon">
+          <br>Content Writing<br><span>38 Courses</span>
+        </div>
+        <div class="cat-box">
+          <img src="bars.png" alt="Finance Icon" class="icon">
+          <br>Finance<br><span>38 Courses</span>
+        </div>
+        <div class="cat-box">
+          <img src="molecule.png" alt="Science Icon" class="icon">
+          <br>Science<br><span>38 Courses</span>
+        </div>
+        <div class="cat-box">
+          <img src="palette.png" alt="Network Icon" class="icon">
+          <br>Network<br><span>38 Courses</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
 </body>
 </html>
