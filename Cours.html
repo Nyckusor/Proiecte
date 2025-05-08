@@ -11,70 +11,65 @@
   </head>
 
   <body>
-    <!-- Navbar -->
-    <header class="navbar">
-      <div class="container">
-        <div class="nav-brand">
-          <a href="index.html" class="brand-link">
-            <span class="text-primary">
-              <span class="text-black">e</span>Learning CUTM
-            </span>
-          </a>
-        </div>
-        
-        <nav class="main-nav">
-          <a href="index.html" class="nav-link">Home</a>
-          <a href="courses.html" class="nav-link active">Courses</a>
-          <a href="#" class="nav-link">Blog</a>
-          <a href="#" class="nav-link">
-            Page <span class="dropdown-icon">▼</span>
-          </a>
-          <a href="#" class="nav-link">LearnPress Add-On</a>
-          <a href="#" class="nav-link">Premium Theme</a>
-        </nav>
-        
-        <div class="nav-actions">
-          <a href="#" class="login-link">Login / Register</a>
-          <button class="icon-button">
-            <i class="fas fa-search"></i>
-          </button>
-        </div>
-        
-        <!-- Mobile menu button -->
-        <button class="mobile-menu-btn" aria-label="Toggle menu">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
+   <!-- Navbar -->
+<header class="navbar">
+  <div class="container">
+      <div class="logo">
+          <img src="book.png" alt="eLearning Logo" style="height: 40px; vertical-align: middle;">
+           eLearning CUTM
       </div>
-    </header>
+      <nav>
+          <ul class="nav-links">
+              <li><a href="Initiere in HTML.html"><b>Home</b></li>
+              <li><a href="Cours.html"><b>Courses</b></a></li>
+              <li><b>Blog</b></li>
+              <li><b>Page</b><i class="fas fa-chevron-down"></i></li>
+              <li><b>LearnPress Add-On</b></li>
+              <li><b>Premium Theme</b></li>
+          </ul>
+      </nav>
+      <div class="auth"><b>Login / Register </b><i class="fas fa-search"></i></div>
+  </div>
+</header>
 
-    <!-- Breadcrumb -->
     <div class="breadcrumb">
       <div class="container">
         <div class="breadcrumb-links">
-          <a href="index.html">Homepage</a>
+          <a href="Initiere in HTML.html">Homepage</a>
           <span>/</span>
-          <a href="courses.html">Course</a>
+          <a href="Cours.html">Course</a>
           <span>/</span>
           <span class="breadcrumb-current">This Course Guide To The Detailed View LMS Plugin</span>
         </div>
       </div>
     </div>
 
-    <!-- Main content -->
-    <main class="courses-page">
+    <main class="courses-page" style="position: right;">
       <div class="container">
         <h1 class="page-title">All Courses</h1>
         
         <div class="courses-layout">
-          <!-- Sidebar with filters -->
+          <!-- Modificat: Am schimbat ordinea și am mutat sidebar-ul în dreapta -->
+          <div class="courses-content">
+            <div class="course-grid" id="courses-container">
+              <!-- Aici vor fi plasate cursurile -->
+            </div>
+
+            <div class="pagination">
+              <button class="pagination-btn active">1</button>
+              <button class="pagination-btn">2</button>
+              <button class="pagination-btn">3</button>
+              <button class="pagination-btn">›</button>
+            </div>
+          </div>
+          
+          <!-- Sidebar mutat în dreapta -->
           <div class="courses-sidebar">
             <div class="search-box">
               <input type="text" placeholder="Search..." class="search-input" />
               <i class="fas fa-search search-icon"></i>
             </div>
-            
+
             <div class="filter-section">
               <h3 class="filter-title">Course Category</h3>
               <div class="filter-options">
@@ -113,6 +108,7 @@
               </div>
             </div>
 
+            <!-- Restul filtrelor sunt aceleași -->
             <div class="filter-section">
               <h3 class="filter-title">Instructors</h3>
               <div class="filter-options">
@@ -243,25 +239,10 @@
               </div>
             </div>
           </div>
-          
-          <!-- Course listings -->
-          <div class="courses-content">
-            <div class="course-grid" id="courses-container">
-              <!-- Courses will be populated by JavaScript -->
-            </div>
-            
-            <div class="pagination">
-              <button class="pagination-btn active">1</button>
-              <button class="pagination-btn">2</button>
-              <button class="pagination-btn">3</button>
-              <button class="pagination-btn">›</button>
-            </div>
-          </div>
         </div>
       </div>
     </main>
 
-    <!-- Footer -->
     <footer class="footer">
       <div class="container">
         <div class="footer-grid">
@@ -275,7 +256,6 @@
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
           </div>
-          
           <div class="footer-column">
             <h3 class="footer-heading">GET HELP</h3>
             <ul class="footer-links">
@@ -284,7 +264,6 @@
               <li><a href="#">FAQ</a></li>
             </ul>
           </div>
-          
           <div class="footer-column">
             <h3 class="footer-heading">PROGRAMS</h3>
             <ul class="footer-links">
@@ -294,7 +273,6 @@
               <li><a href="#">Languages</a></li>
             </ul>
           </div>
-          
           <div class="footer-column">
             <h3 class="footer-heading">CONTACT US</h3>
             <p class="footer-text">
@@ -322,67 +300,7 @@
       </div>
     </footer>
 
-    <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
     <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
     <script src="script.js"></script>
-
-    <style>
-      /* Stiluri de bază pentru afișare */
-      body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 20px;
-      }
-      .category-card, .course-card {
-        border: 1px solid #ccc;
-        border-radius: 8px;
-        padding: 15px;
-        margin: 10px;
-        text-decoration: none;
-        color: black;
-        display: inline-block;
-        width: 200px;
-        text-align: center;
-      }
-      .category-icon {
-        font-size: 30px;
-      }
-      .course-card {
-        width: 300px;
-        vertical-align: top;
-      }
-      .course-image {
-        width: 100%;
-        border-radius: 8px;
-      }
-      .course-category {
-        background-color: #eee;
-        padding: 5px;
-        display: block;
-        margin-top: 5px;
-        font-weight: bold;
-      }
-      .course-meta span {
-        display: inline-block;
-        margin: 5px 10px 5px 0;
-      }
-      .course-footer {
-        margin-top: 10px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-      }
-      .price-free {
-        display: none;
-      }
-      .view-button {
-        background-color: #007BFF;
-        border: none;
-        color: white;
-        padding: 8px 12px;
-        border-radius: 5px;
-        cursor: pointer;
-      }
-    </style>
   </body>
 </html>
