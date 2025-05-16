@@ -1,23 +1,3 @@
-function toggleMoments() {
-  const momentsDiv = document.getElementById("moments");
-  if (momentsDiv.style.display === "none") {
-    momentsDiv.style.display = "block";
-  } else {
-    momentsDiv.style.display = "none";
-  }
-}
-
-function toggleTheme() {
-  const body = document.body;
-  if (body.classList.contains("dark-theme")) {
-    body.classList.remove("dark-theme");
-    body.classList.add("light-theme");
-  } else {
-    body.classList.remove("light-theme");
-    body.classList.add("dark-theme");
-  }
-}
-
 // Adaugă stilurile pentru temele albă și neagră
 document.addEventListener("DOMContentLoaded", () => {
   const style = document.createElement("style");
