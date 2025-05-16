@@ -49,3 +49,51 @@ footer {
   bottom: 0;
   width: 100%;
 }
+
+nav {
+  color: #fff;
+}
+
+nav a,
+nav span {
+  color: #fff;
+  text-decoration: none;
+}
+
+.league-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  margin: 30px auto;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+.league-table th, .league-table td {
+  padding: 12px 8px;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+}
+.league-table th {
+  background: #f7f9fa;
+  font-weight: 600;
+}
+.league-table tbody tr:hover {
+  background: #f0f4f8;
+}
+.league-table img {
+  margin-right: 8px;
+}
+.form {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  line-height: 22px;
+  border-radius: 50%;
+  color: #fff;
+  font-weight: bold;
+  margin: 0 2px;
+}
+.form.win { background: #3bb54a; }
+.form.draw { background: #bdbdbd; }
+.form.loss { background: #e74c3c; }
